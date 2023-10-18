@@ -1,0 +1,43 @@
+.contact{
+    padding: 20px;
+}
+
+.contact ul{
+    margin: 20px;
+}
+
+footer{
+    background-color: #020113;
+    color: #ffffff;
+    padding: 0px 0; 
+    margin-top: 0px;
+    text-align: center;
+}
+
+footer h1{
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer li{
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+footer a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer a:hover{
+    color: #FFA500;
+}

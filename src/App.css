@@ -1,0 +1,93 @@
+/* https://blog.logrocket.com/create-responsive-navbar-react-css/ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.landing{
+    background: url("/src/Videos/image.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.logo{
+    color: #fff;
+    font-size:25px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 30px 0 0 100px;
+    display: inline-block;
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+
+nav ul li a:not(.contact){
+    color: #fff;
+    font-size: 25px;
+    display: inline;
+    top: 0;
+    right:  0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 0 30px 0 30px;
+}
+
+
+.buttons{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.buttons button{
+    padding: 10px 50px;
+    background:  transparent;
+    border: 2px solid #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #fff;
+    border-radius: 10px;
+    margin: 0 5px 0 5px;
+    font-weight: 500;
+}
+
+.main{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: inline-block;
+}
+
+.main h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 135px;
+}
+
+/* #text{
+    top: 300px;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    font-size: 30px;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#text h1{
+    font-size: 50px;
+} */

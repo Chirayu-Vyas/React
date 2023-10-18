@@ -1,0 +1,111 @@
+/* Home.css */
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  width: 100%; /* Adjust width as needed */
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background-video video {
+  width: 100%;
+  height: 150%;
+  
+  object-fit: cover;
+}
+
+.content {
+  width: 50%;
+  padding: 20px;
+  z-index: 1;
+}
+
+.text {
+  color: #fff; /* Adjust text color for better visibility */
+}
+
+/* .text h1 {
+  font-size: 4em;
+  position: relative;
+  top: 40%;
+  font-family: 'Montserrat Alternates';
+  overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 5s forwards infinite;
+
+} */
+
+.typing-line {
+  display: inline-block;
+  overflow: hidden; /* Hide overflowing characters */
+  white-space: nowrap; /* Keep the text on one line */
+  font-size: 4em;
+  position: relative;
+  top: 40%;
+  font-family: 'Montserrat Alternates';
+  /* border-right: 0.1em solid black; Cursor representing typing */
+  margin-bottom: 10px; /* Space between lines */
+}
+
+/* Animation for typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Apply the typing animation to ::after pseudo-element */
+.typing-line::after {
+  content: "|"; /* Cursor representing typing */
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 0.1em; /* Adjust spacing between text and cursor */
+  /* animation: typing 1s steps(12, end) infinite; */
+}
+
+/* Apply delay for each line */
+.typing-line:nth-child(2)::after {
+  animation-delay: 1s; /* Delay for the second line */
+}
+.text h4{
+  font-size: 3em;
+  padding-top: 40px;
+  font-family: 'Montserrat Alternates';
+}
+
+.second-bg{
+  background-color: rgba(94, 144, 192, 0.4);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
